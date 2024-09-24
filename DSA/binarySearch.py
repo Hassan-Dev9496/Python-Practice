@@ -13,3 +13,5 @@ def binary_search(arr , target):
 arr = ["10" , "40" , "50" , "80" , "100"]
 target="40"
 print(binary_search(arr ,target ))
+
+
