@@ -51,17 +51,58 @@
 #linear search in method
 
 
-def liner_search(arr , item):
-    if item in arr:
-        print("Yes item is in array")
-    else:
-        print("No")
+# def liner_search(arr , item):
+#     if item in arr:
+#         print("Yes item is in array")
+#     else:
+#         print("No")
 
-arr =['1' , '2' , '3' , '4' , '5']
-item='3'
+# arr =['1' , '2' , '3' , '4' , '5']
+# item='3'
 
-liner_search(arr , item)
+# liner_search(arr , item)
 
+#find max number in array 
+
+# def linear_search (arr):
+#     for i in range(len(arr)):
+#         highest = arr[0]
+#         if arr[i] > highest:
+#             highest = arr[i]
+#     return highest
+
+# arr =['1' , '2' , '3' , '4' , '5']
+
+# print(linear_search(arr))  
+
+#repeating element
+
+# def linear_search(array):
+#     visited= set()
+    
+#     for num in array:
+#         if num in visited:
+#             first_repeating = num
+#         else:
+#             visited.add(num)
+
+#     return first_repeating
+            
+# arr =[1 , 2 , 3 , 3 , 4, 5]
+# print(linear_search(arr))  
+
+
+#find the occurance of numbers greater than target
+def linear_search(array , target):
+    visited = set()
+    for num in array:
+        if num > target:
+            visited.add(num)
+    return len(visited)
+
+arr =[1 , 2 , 3 , 4, 5]
+target = 2
+print(linear_search(arr , target))  
 
 
 
